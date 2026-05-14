@@ -3,8 +3,8 @@ const PROJECT_ID = import.meta.env.VITE_PROJECT_ID || 'auctoritas';
 
 export const submitContact = async (formData) => {
   const data = new FormData();
-  data.append('first_name', formData.firstName || formData.first_name || '');
-  data.append('last_name', formData.lastName || formData.last_name || '');
+  data.append('first_name', formData.firstName || formData.first_name || 'User');
+  data.append('last_name', formData.lastName || formData.last_name || '-');
   data.append('email', formData.email);
   data.append('phone', formData.phone || '');
   data.append('subject', formData.subject || '');

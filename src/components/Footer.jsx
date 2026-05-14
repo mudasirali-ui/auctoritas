@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="brand" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-              <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '48px', objectFit: 'contain' }} />
+              <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '100px', objectFit: 'contain', borderRadius: '8px' }} />
             </Link>
             <p>Workplace knowledge, compliance, and training in one AI layer. Turn enterprise agreements into instant support.</p>
             <div style={{ display: 'flex', gap: '1.25rem', marginTop: '1.5rem', color: 'rgba(255, 255, 255, 0.7)' }}>

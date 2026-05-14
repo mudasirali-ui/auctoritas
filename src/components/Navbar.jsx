@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container nav-container">
         <Link to="/" onClick={closeMenu} className="brand" aria-label="Auctoritas home" style={{ display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 1001 }}>
-          <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '40px', objectFit: 'contain' }} />
+          <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '80px', objectFit: 'contain', borderRadius: '8px' }} />
         </Link>
 
         {/* Desktop Nav */}
