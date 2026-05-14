@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container nav-container">
         <Link to="/" onClick={closeMenu} className="brand" aria-label="Auctoritas home" style={{ display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 1001 }}>
-          <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '80px', objectFit: 'contain', borderRadius: '8px' }} />
+          <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '100px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} />
         </Link>
 
         {/* Desktop Nav */}
@@ -22,12 +22,13 @@ export default function Navbar() {
           <Link to="/product" className={`nav-link ${isActive('/product')}`}>Product</Link>
           <Link to="/compliance" className={`nav-link ${isActive('/compliance')}`}>Compliance & Training</Link>
           <Link to="/about" className={`nav-link ${isActive('/about')}`}>About</Link>
+          <Link to="/pricing" className={`nav-link ${isActive('/pricing')}`}>Pricing</Link>
           <Link to="/contact" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Book Demo</Link>
         </nav>
 
         {/* Mobile Toggle */}
         <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu" style={{ zIndex: 1001 }}>
-          {isMobileMenuOpen ? <X color="white" size={32} /> : <Menu color="white" size={32} />}
+          {isMobileMenuOpen ? <X color="#0f172a" size={32} /> : <Menu color="#0f172a" size={32} />}
         </button>
 
         {/* Mobile Menu Overlay */}
@@ -36,6 +37,7 @@ export default function Navbar() {
           <Link to="/product" onClick={closeMenu} className={`nav-link ${isActive('/product')}`}>Product</Link>
           <Link to="/compliance" onClick={closeMenu} className={`nav-link ${isActive('/compliance')}`}>Compliance</Link>
           <Link to="/about" onClick={closeMenu} className={`nav-link ${isActive('/about')}`}>About</Link>
+          <Link to="/pricing" onClick={closeMenu} className={`nav-link ${isActive('/pricing')}`}>Pricing</Link>
           <Link to="/contact" onClick={closeMenu} className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>Book Demo</Link>
         </div>
       </div>

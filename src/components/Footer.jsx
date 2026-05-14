@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="brand" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-              <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '100px', objectFit: 'contain', borderRadius: '8px' }} />
+              <img src="/logo.png" alt="Auctoritas Logo" style={{ height: '100px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} />
             </Link>
             <p>Workplace knowledge, compliance, and training in one AI layer. Turn enterprise agreements into instant support.</p>
-            <div style={{ display: 'flex', gap: '1.25rem', marginTop: '1.5rem', color: 'rgba(255, 255, 255, 0.7)' }}>
+            <div style={{ display: 'flex', gap: '1.25rem', marginTop: '1.5rem', color: 'var(--text-muted)' }}>
               <a href="#" aria-label="Twitter" style={{ color: 'inherit', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" /></svg>
               </a>
@@ -29,7 +29,7 @@ export default function Footer() {
               <li><Link to="/product">Product Features</Link></li>
               <li><Link to="/compliance">Compliance & Training</Link></li>
               <li><Link to="/">Use Cases</Link></li>
-              <li><Link to="/">Pricing</Link></li>
+              <li><Link to="/pricing">Pricing</Link></li>
             </ul>
           </div>
 
@@ -38,8 +38,8 @@ export default function Footer() {
             <ul>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/">Privacy Policy</Link></li>
-              <li><Link to="/">Terms of Service</Link></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><Link to="/terms">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
